@@ -1,0 +1,138 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  background-image: url(./Light-Wood-Background.jpg);
+}
+
+footer {
+    background-color: #E6FFEC;
+    display: flex;
+    color: #000000;
+    text-align: right;
+    padding-right: 60px;
+    justify-content: right;
+    align-items: center;
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0px -4px 4px rgba(0,0,0,0.25);
+}
+
+header {
+  background-color: #E6FFEC;
+  display: flex;
+  justify-content: space-between;
+  color: #000000;
+  padding-left: 60px;
+  padding-right: 60px;
+  text-align: center;
+  height: 50px;
+  box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+}
+
+.btn-sair{
+    background-color: transparent;
+    color: #000;
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+.btn-novo{
+    background-color: transparent;
+    color: #000;
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container .title{
+    text-align: center;
+    font-size: 40px;
+    color: #CC9036;
+    margin-bottom: 20px;
+    text-shadow: 4px 4px 6px #000000;
+    width: 100%;
+}
+.galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    background-color: #E6FFEC;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.25);
+    margin: 20px;
+    width: 200px;
+    height: 300px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.card .name{
+    display: block;
+    font-size: 20px;
+    color: #fff;
+    position: absolute;
+    opacity: 0;
+}
+.card p {
+    display: flex;
+    font-size: 20px;
+    color: #fff;
+    position: absolute;
+    margin-top: 50px;
+}
+
+.parcial{
+    display: flex;
+    position: absolute;
+    bottom: -200px;
+    width: 200px;
+    height: 150px;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 0 0 10px 10px;
+    justify-content: center;
+}
+
+
+img{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 10px 0 0;
+}
+

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <link href='https://fonts.googleapis.com/css?family=Mystery Quest' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/67da88b6c5.js" crossorigin="anonymous"></script>
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="card on" id="frente">
+        <h1>Login</h1>
+        <form action="" method="post">
+            <div class="form-group">
+                <input type="text" placeholder="Usuário" name="username" id="username">
+            </div>
+            <div class="form-group">
+                <input type="password" placeholder="Senha" id="password">
+                <span class="fa-solid fa-eye-slash eye"></span>
+                <!--<span class="fa-solid fa-eye eye"></span>-->
+            </div>
+            <div class="group">
+                <input class='check' type="checkbox" name="remember" id="remember">
+                <label class='lembrar' for="remember">Lembrar-me</label>
+            </div>
+            <button class='btn-entrar' type="submit">Entrar</button>
+        </form>
+        <div class="change">
+            <label for="">Não possuí uma conta?</label>
+            <a href="#">Cadastre-se Aqui</a>
+        </div>
+    </div>
+    <div class="card off cad" id="tras">
+        <h1>Cadastro</h1>
+        <form action="" method="post">
+            <div class="form-group">
+                <input type="text" placeholder="Usuário" name="username" id="username">
+            </div>
+            <div class="form-group">
+                <input type="password" placeholder="Senha" id="password">
+            </div>
+            <div class="form-group">
+                <input type="password" placeholder="Repita Senha" id="repita-password">
+            </div>
+
+            <button class='btn-cadastrar' type="submit">Cadastrar</button>
+        </form>
+        <div class="change">
+            <label for="">Possuí uma conta?</label>
+            <a href="#">Realize o login Aqui</a>
+        </div>
+    </div>
+</body>
+<script src="login.js"></script>
+
+</html>
